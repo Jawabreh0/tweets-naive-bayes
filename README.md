@@ -18,7 +18,10 @@ This project is a Naive Bayes classifier implemented in Python to categorize twe
 6. After training, we evaluated the model's performance by measuring its accuracy, precision, recall, and F1 score.
    
 ## Evaluation Results
-- **Evaluation Report** : Here we got a
+ At the end we used 3591 tweets for each label, amounting to a total of 7182 tweets. 
+
+- **Evaluation Report** : The models accuracy is 92.41%
+
 
 
 ## Installation
