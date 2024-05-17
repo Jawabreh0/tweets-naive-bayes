@@ -26,10 +26,10 @@ This project is a Naive Bayes classifier implemented in Python to categorize twe
 
 
 - **Precision, Recall, and F1-Score** :
-- 
+  
 ![evaluation/precision-recall-f1.png](evaluation/precision-recall-f1.png)
 
-  **Confusion Metrix**:
+- **Confusion Metrix**:
   
 ![evaluation/confusion-metrix.png](evaluation/confusion-metrix.png)
 
