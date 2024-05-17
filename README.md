@@ -10,13 +10,15 @@ This project is a Naive Bayes classifier implemented in Python to categorize twe
 
 ## How we did it 
 
-1. We started with a dataset of labeled tweets where the labels are 0 and 1, 0 referf to normal tweets and one refers to harmful tweets.
-2. We started with cleaning the dataset where we cleaned the database from unwanted straings such as mentions, hashtags, number, emojis, and etc.., where you can find all of the dataset related script [HERE](manage_dataset/)
-3. After cleaning the dataset, we starting with spliting the dataset according to it's label, then with each labeled dataset, we started with splitting it into training and testing datasets, and at the we started with balancing the datasets, you can find all the related script to do each of these step [HERE](manage_dataset/) as well
-4. after getting the dataset side done we started with the training phase, where we got vectorizer and classifier model as pkl models. You find the trained models [HERE](trained_models/), and you can find the training script here as well [HERE](train.py)
-5. 
-## Evaluation
-- **Evaluation Report**
+1. We began by utilizing a dataset of labeled tweets, with labels assigned as 0 or 1—0 for normal tweets and 1 for harmful tweets.
+2. The initial step involved cleaning the dataset by removing unwanted strings such as mentions, hashtags, numbers, emojis, etc. All scripts related to dataset management are available[HERE](manage_dataset/)
+3. After cleaning, we segmented the dataset based on labels. For each category, we further divided the data into training and testing sets and balanced these datasets. You can access all scripts for these processes [HERE](manage_dataset/).
+4. Once the dataset was prepared, we moved on to the training phase, where we utilized vectorizers and classifiers saved as .pkl models. The trained models can be found [HERE](trained_models/), aalong with the training script [HERE](train.py)
+5. We trained the model using 20,000 tweets for each label, amounting to a total of 40,000 tweets.
+6. After training, we evaluated the model's performance by measuring its accuracy, precision, recall, and F1 score.
+   
+## Evaluation Results
+- **Evaluation Report** : Here we got a
 
 
 ## Installation
