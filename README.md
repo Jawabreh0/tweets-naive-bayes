@@ -40,6 +40,6 @@ To set up this project, you will need Python installed on your machine. You can 
 ```bash
 git clone https://github.com/Jawabreh0/tweets-naive-baye.git
 cd tweets-naive-bayes
-pip install -r requirements.txt
+python classification.py
 ```
 
