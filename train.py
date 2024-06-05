@@ -25,6 +25,9 @@ logger.info("Combining datasets...")
 tweets = pd.concat([tweets_normal, tweets_harmful], ignore_index=True)
 logger.info("Datasets combined successfully.")
 
+# Handle missing values in the 'tweet' column
+tweets['tweet'].fillna('', inplace=True)
+
 # Extract features and labels
 X = tweets['tweet']  # Assuming the column with tweets is named 'tweet'
 y = tweets['label']

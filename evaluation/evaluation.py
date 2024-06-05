@@ -20,8 +20,8 @@ def safe_load_joblib(path):
 
 # Load the trained model and vectorizer
 logger.info("Loading the trained model and TF-IDF vectorizer...")
-clf = safe_load_joblib('./trained_models/naive_bayes_model.pkl')
-vectorizer = safe_load_joblib('./trained_models/tfidf_vectorizer.pkl')
+clf = safe_load_joblib('/Users/cypruscodes/Desktop/Bandar_Project/tweets-naive-bayes/trained_models/naive_bayes_model.pkl')
+vectorizer = safe_load_joblib('/Users/cypruscodes/Desktop/Bandar_Project/tweets-naive-bayes/trained_models/tfidf_vectorizer.pkl')
 if not clf or not vectorizer:
     logger.error("Failed to load model or vectorizer. Exiting program.")
     exit(1)
@@ -29,8 +29,8 @@ logger.info("Model and vectorizer loaded successfully.")
 
 # Load the test datasets
 logger.info("Loading the test datasets...")
-test_normal = pd.read_csv('./dataset/testing_dataset/testing-normal.csv')
-test_harmful = pd.read_csv('./dataset/testing_dataset/testing-harmful.csv')
+test_normal = pd.read_csv('/Users/cypruscodes/Desktop/Bandar_Project/tweets-naive-bayes/dataset/testing_dataset/testing-normal.csv')
+test_harmful = pd.read_csv('/Users/cypruscodes/Desktop/Bandar_Project/tweets-naive-bayes/dataset/testing_dataset/testing-harmful.csv')
 logger.info("Test datasets loaded successfully.")
 
 # Combine the datasets
